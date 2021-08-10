@@ -25,7 +25,7 @@ export default function SignupBody() {
   };
 
   return (
-    <Wrapper>
+    <>
       <GoBackButton onClick={() => handleBackButtonClick()} />
       <AuthLogo>μStock</AuthLogo>
       <SignupText>회원가입</SignupText>
@@ -34,18 +34,9 @@ export default function SignupBody() {
       ) : (
         <SignupOption signupWithEmail={signupWithEmail} />
       )}
-    </Wrapper>
+    </>
   );
 }
-
-const Wrapper = styled.div`
-  ${mixins.flexColumn}
-  width: 100%;
-  padding: 20% 13% 30%;
-  align-items: center;
-  position: relative;
-  height: 640px;
-`;
 
 const SignupText = styled.h2`
   ${fonts.big}

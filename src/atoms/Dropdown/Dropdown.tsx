@@ -4,7 +4,7 @@ import * as mixins from "styles/mixins";
 import * as fonts from "styles/fonts";
 
 const small = css`
-  width: 116px;
+  width: 100px;
 `;
 
 const mid = css`
@@ -36,12 +36,13 @@ export default Dropdown;
 const DropdownStyle = styled.button<PropTypes>`
   ${mixins.flexRow}
   ${fonts.normal}
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   border: 1px solid var(--color-03);
-  border-radius: 3px;
-  height: 42px;
-  padding: 12px 20px 12px 35px;
+  padding-left: 30px;
+  padding-right: 13px;
+  border-radius: 5px;
+  height: 32px;
   cursor: pointer;
   background: none;
   ${(props) => (props.size ? sizes[props.size] : "")};
