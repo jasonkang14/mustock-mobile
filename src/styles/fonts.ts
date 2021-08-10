@@ -24,8 +24,8 @@ export const common = css`
 
 export const small = css`
   ${common};
-  font-size: 14px;
-  line-height: 120%;
+  font-size: 12px;
+  line-height: 130%;
 `;
 
 export const normal = css`
