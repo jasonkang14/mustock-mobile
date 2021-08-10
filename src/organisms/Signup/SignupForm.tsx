@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { AuthButton as SignupButton } from "atoms/AuthButtons";
-import SocialLogin from "molecules/SocialLogin";
 import * as fonts from "styles/fonts";
 import * as mixins from "styles/mixins";
 import { useTextInput } from "atoms/Input";
