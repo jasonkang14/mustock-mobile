@@ -3,9 +3,13 @@ import styled from "styled-components";
 import * as fonts from "styles/fonts";
 import * as mixins from "styles/mixins";
 
-export default function Header() {
+interface HeaderProps {
+  toggleNavBar: () => void;
+}
+
+export default function Header({ toggleNavBar }: HeaderProps) {
   return (
-    <Wrapper>
+    <Wrapper onClick={() => toggleNavBar()}>
       <NavBarButton />
       <Logo>μStock</Logo>
       <AlarmWrap>

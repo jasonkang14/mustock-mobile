@@ -14,7 +14,6 @@ export const AuthScreen = styled.div`
 
 export const MainScreen = styled.div`
   padding: 40px 16px 30px;
-  overflow: auto;
 `;
 
 export const Widget = styled.div`
