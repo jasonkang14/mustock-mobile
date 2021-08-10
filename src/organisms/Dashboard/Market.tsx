@@ -35,7 +35,7 @@ const data = {
 const options = {
   spacing: -10,
   rotation: -90,
-  cutout: 40,
+  cutout: 36,
   plugins: {
     legend: {
       display: false,
@@ -45,7 +45,7 @@ const options = {
 
 export default function Market() {
   return (
-    <Widget>
+    <MarketWidget>
       <SectionTitle>
         <HeaderIcon src="/icons/ic-market-chart.svg" />
         시장반응
@@ -92,15 +92,19 @@ export default function Market() {
           <Doughnut data={data} options={options} />
         </ChartWrap>
       </Content>
-    </Widget>
+    </MarketWidget>
   );
 }
+
+const MarketWidget = styled(Widget)`
+  padding: 16px 13px 16px 20px;
+`;
 
 const ChartWrap = styled.div`
   ${mixins.flexCenter}
   width: 30%;
   height: 100%;
-  margin-left: 5%;
+  margin-left: 4%;
   position: relative;
 `;
 
