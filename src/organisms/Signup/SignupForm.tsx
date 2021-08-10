@@ -51,7 +51,7 @@ export default function SignupForm() {
   );
 }
 
-const Wrapper = styled.section`
+const Wrapper = styled.div`
   ${mixins.flexColumn}
   ${mixins.flexCenter}
   width: 100%;
@@ -67,7 +67,7 @@ const FormWrapper = styled.div`
 `;
 
 const OptionHeader = styled.h4`
-  ${fonts.small}
+  ${fonts.normal}
   text-align: left;
   margin: 0;
   margin-bottom: 4px;
@@ -80,7 +80,7 @@ const InputWrap = styled.div`
   padding: 0 2px;
   margin-bottom: 11px;
   > input {
-    ${fonts.small}
+    ${fonts.normal}
   }
 `;
 
@@ -95,7 +95,7 @@ const TermWrapper = styled.div`
 `;
 
 const TermText = styled.h5`
-  ${fonts.small}
+  ${fonts.normal}
   color: var(--color-04);
   margin: 0;
 `;
@@ -105,6 +105,6 @@ const ShowDetailButton = styled(TermText)`
 `;
 
 const AgreeWithAllMessage = styled.h6`
-  ${fonts.small}
+  ${fonts.normal}
   margin: 0
 `;

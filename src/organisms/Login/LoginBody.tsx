@@ -8,7 +8,7 @@ import { AuthLogo } from "atoms/Logo";
 
 export default function LoginBody() {
   return (
-    <Wrapper>
+    <>
       <AuthLogo>μStock</AuthLogo>
       <LoginText>회원로그인</LoginText>
       <LoginForm />
@@ -21,20 +21,9 @@ export default function LoginBody() {
           <FindPasswordButton>비밀번호 찾기</FindPasswordButton>
         </Link>
       </ButtonWrap>
-    </Wrapper>
+    </>
   );
 }
-
-const Wrapper = styled.div`
-  ${mixins.flexColumn}
-  height: 640px;
-  width: 100%;
-  padding: 20% 13% 30%;
-  align-items: center;
-  > section {
-    margin-top: 64px;
-  }
-`;
 
 const LoginText = styled.h2`
   ${fonts.big}

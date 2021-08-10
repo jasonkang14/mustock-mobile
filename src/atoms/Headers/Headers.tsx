@@ -1,14 +1,15 @@
 import { ButtonStyle } from "atoms/Button/Button";
 import Icon from "atoms/Icon";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+import * as fonts from "styles/fonts";
 import * as mixins from "styles/mixins";
 
 export const SectionTitle = styled.h1`
-  font-family: NanumGothicBold;
-  font-size: 20px;
-  line-height: 130%;
+  ${fonts.mid}
+  ${fonts.bold}
   ${mixins.flexRow}
   align-items: center;
+  position: sticky;
 `;
 
 export const HeaderIcon = styled(Icon)`

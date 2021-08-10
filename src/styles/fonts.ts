@@ -24,19 +24,19 @@ export const common = css`
 
 export const small = css`
   ${common};
-  font-size: 12px;
+  font-size: 10px;
   line-height: 130%;
 `;
 
 export const normal = css`
   ${common};
-  font-size: 16px;
+  font-size: 12px;
   line-height: 120%;
 `;
 
 export const mid = css`
   ${common};
-  font-size: 18px;
+  font-size: 16px;
   line-height: 130%;
 `;
 

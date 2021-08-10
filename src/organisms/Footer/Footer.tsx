@@ -38,7 +38,7 @@ const MMELogo = styled(Icon)`
 `;
 
 const Box = styled.section`
-  ${fonts.small}
+  ${fonts.normal}
   margin-top: 20px;
 `;
 
@@ -65,7 +65,7 @@ const PolicyWrap = styled(CompanyInfo.withComponent("div"))`
 `;
 
 const Policy = styled.a`
-  ${fonts.small}
+  ${fonts.normal}
   cursor: pointer;
   height: 16px;
 `;
