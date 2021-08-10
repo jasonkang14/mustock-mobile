@@ -27,6 +27,7 @@ export default function LoginBody() {
 
 const Wrapper = styled.div`
   ${mixins.flexColumn}
+  height: 640px;
   width: 100%;
   padding: 20% 13% 30%;
   align-items: center;

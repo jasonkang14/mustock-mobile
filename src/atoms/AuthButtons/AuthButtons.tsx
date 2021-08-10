@@ -5,12 +5,18 @@ import * as mixins from "styles/mixins";
 
 export const AuthButton = styled(ButtonStyle)`
   ${mixins.flexCenter}
-  ${fonts.mid}
+  ${fonts.normal}
   ${fonts.bold}
   width: 100%;
   height: 50px;
   background-color: var(--color-07);
   color: var(--color-01);
+`;
+
+export const EmailSignupButton = styled(AuthButton)`
+  color: var(--color-07);
+  background-color: var(--color-01);
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.25));
 `;
 
 const AuthButtonStyle = styled(ButtonStyle)`
@@ -33,4 +39,13 @@ export const KakaoLoginButton = styled(AuthButtonStyle)`
 `;
 export const NaverLoginButton = styled(AuthButtonStyle)`
   background-image: url(/icons/ic-naver-login.svg);
+`;
+
+export const GoBackButton = styled(AuthButtonStyle)`
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-image: url(/icons/ic-back-arrow.svg);
 `;
