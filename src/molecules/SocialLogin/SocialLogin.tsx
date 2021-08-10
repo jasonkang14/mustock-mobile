@@ -21,5 +21,5 @@ export default function SocialLogin() {
 const Wrapper = styled.section`
   ${mixins.flexCenter}
   justify-content: space-around;
-  width: 16%;
+  width: 100%;
 `;
