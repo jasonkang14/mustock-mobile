@@ -19,22 +19,19 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <Layout>
-      <Content>
-        {auth ? (
-          <>
-            <Header toggleNavBar={toggleNavBar} />
-            <MainScreen>
-              {showNav && <NavigationBar />}
-
-              <Component {...pageProps} />
-            </MainScreen>
-          </>
-        ) : (
-          <AuthScreen>
+      {auth ? (
+        <>
+          <Header toggleNavBar={toggleNavBar} />
+          <MainScreen>
+            {showNav && <NavigationBar />}
             <Component {...pageProps} />
-          </AuthScreen>
-        )}
-      </Content>
+          </MainScreen>
+        </>
+      ) : (
+        <AuthScreen>
+          <Component {...pageProps} />
+        </AuthScreen>
+      )}
       <Footer />
     </Layout>
   );
@@ -43,11 +40,8 @@ export default MyApp;
 
 const Layout = styled.div`
   ${mixins.flexColumn}
+  position: relative;
+  justify-content: space-between;
   height: 100vh;
   background-color: var(--color-02);
-  overflow: scroll;
-`;
-
-const Content = styled.div`
-  height: 100%;
 `;

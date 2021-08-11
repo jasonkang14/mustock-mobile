@@ -14,6 +14,7 @@ export const AuthScreen = styled.div`
 
 export const MainScreen = styled.div`
   padding: 40px 16px 30px;
+  background-color: var(--color-02);
 `;
 
 export const Widget = styled.div`
@@ -25,4 +26,5 @@ export const Widget = styled.div`
   padding: 16px 20px;
   position: relative;
   width: 100%;
+  overflow: hidden;
 `;

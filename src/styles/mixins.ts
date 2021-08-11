@@ -48,3 +48,11 @@ export const btnPrimary = css`
   color: var(--white);
   background-color: var(--purple-300);
 `;
+
+export const sticky = css`
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+`;

@@ -28,7 +28,6 @@ const Wrapper = styled.footer`
   width: 100%;
   background-color: var(--color-01);
   padding: 16px 40px;
-  bottom: 0;
 `;
 
 const MMELogo = styled(Icon)`
