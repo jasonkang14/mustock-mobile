@@ -23,7 +23,7 @@ export const Widget = styled.div`
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-bottom: 16px;
-  padding: 16px 20px;
+  padding: 8px 20px 16px;
   position: relative;
   width: 100%;
   overflow: hidden;

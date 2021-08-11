@@ -7,9 +7,9 @@ import * as mixins from "styles/mixins";
 export const SectionTitle = styled.h1`
   ${fonts.mid}
   ${fonts.bold}
+  ${mixins.sticky}
   ${mixins.flexRow}
   align-items: center;
-  position: sticky;
 `;
 
 export const HeaderIcon = styled(Icon)`
