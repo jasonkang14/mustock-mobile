@@ -42,7 +42,7 @@ export const mid = css`
 
 export const midBig = css`
   ${common};
-  font-size: 20px;
+  font-size: 18px;
   line-height: 130%;
 `;
 
