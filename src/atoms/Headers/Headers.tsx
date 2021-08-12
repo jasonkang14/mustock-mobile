@@ -10,6 +10,7 @@ export const SectionTitle = styled.h1`
   ${mixins.sticky}
   ${mixins.flexRow}
   align-items: center;
+  position: relative;
 `;
 
 export const HeaderIcon = styled(Icon)`

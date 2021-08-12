@@ -6,7 +6,6 @@ const Mark = styled.mark<{ color?: string }>`
   font-family: NanumGothicBold;
   font-weight: bold;
   line-height: 160%;
-  margin: 0 4px;
 `;
 
 export default Mark;
