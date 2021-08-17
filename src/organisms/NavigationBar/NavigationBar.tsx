@@ -16,8 +16,17 @@ import * as mixins from "styles/mixins";
 import { ButtonStyle } from "atoms/Button/Button";
 import Mark from "atoms/Mark";
 
-const Navbar = () => {
+type NavBarProps = {
+  closeNavBar: () => void;
+};
+
+const Navbar = ({ closeNavBar }: NavBarProps) => {
   const router = useRouter();
+
+  const navigateToPage = (path: string) => {
+    router.push(path);
+    closeNavBar();
+  };
 
   return (
     <NavBarWrap>
@@ -25,37 +34,37 @@ const Navbar = () => {
         <NavBarLogo>
           <NavMark>홍길동</NavMark> 고객님, 안녕하세여!
         </NavBarLogo>
-        <NavButton onClick={() => router.push("/dashboard")}>
+        <NavButton onClick={() => navigateToPage("/dashboard")}>
           <DashboardButton />
           <NavTitle>대시보드</NavTitle>
         </NavButton>
-        <NavButton onClick={() => router.push("/analysis")}>
+        <NavButton onClick={() => navigateToPage("/analysis")}>
           <AnalysisButton />
           <NavTitle>종목 별 분석</NavTitle>
         </NavButton>
-        <NavButton onClick={() => router.push("/algorithm")}>
+        <NavButton onClick={() => navigateToPage("/algorithm")}>
           <AIPortfolioButton />
           <NavTitle>AI 포트폴리오</NavTitle>
         </NavButton>
-        <NavButton onClick={() => router.push("/market")}>
+        <NavButton onClick={() => navigateToPage("/market")}>
           <MarketButton />
           <NavTitle>시장 분위기 분석</NavTitle>
         </NavButton>
-        <NavButton onClick={() => router.push("/asset")}>
+        <NavButton onClick={() => navigateToPage("/asset")}>
           <MyPortfolioButton />
           <NavTitle>내 포트폴리오</NavTitle>
         </NavButton>
       </ButtonWrap>
       <ButtonWrap>
-        <NavBottomButton onClick={() => router.push("/support")}>
+        <NavBottomButton onClick={() => navigateToPage("/support")}>
           <SupportButton />
           <NavBottomTitle>지원</NavBottomTitle>
         </NavBottomButton>
-        <NavBottomButton onClick={() => router.push("/setting")}>
+        <NavBottomButton onClick={() => navigateToPage("/settings")}>
           <SettingsButton />
           <NavBottomTitle>설정</NavBottomTitle>
         </NavBottomButton>
-        <NavBottomButton onClick={() => router.push("/plan")}>
+        <NavBottomButton onClick={() => navigateToPage("/plan")}>
           <PlanButton />
           <NavBottomTitle>플랜변경</NavBottomTitle>
         </NavBottomButton>

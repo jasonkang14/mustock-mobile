@@ -39,11 +39,10 @@ const PredictionWrap = styled.span`
 `;
 
 const PredictionTitle = styled.h4`
+  ${fonts.medium}
   ${fonts.bold}
   margin: 0;
   color: var(--color-07);
-  font-size: 14px;
-  line-height: 130%;
 `;
 
 const PredictionDetail = styled(PredictionTitle.withComponent("h5"))`

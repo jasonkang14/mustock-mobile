@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import * as mixins from "styles/mixins";
 
-export const AuthScreen = styled.div`
+export const AuthScreen = styled.main`
   ${mixins.flexColumn}
   height: 640px;
   width: 100%;
@@ -12,12 +12,12 @@ export const AuthScreen = styled.div`
   }
 `;
 
-export const MainScreen = styled.div`
+export const MainScreen = styled.main`
   padding: 40px 16px 30px;
   background-color: var(--color-02);
 `;
 
-export const Widget = styled.div`
+export const Widget = styled.article`
   background-color: var(--color-01);
   border: 1px solid var(--color-01);
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);

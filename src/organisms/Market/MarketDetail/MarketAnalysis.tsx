@@ -77,10 +77,9 @@ const Term = styled.span`
 `;
 
 const Result = styled.div`
+  ${fonts.medium}
   ${mixins.flexCenter};
   flex-direction: column;
-  font-size: 14px;
-  line-height: 160%;
   margin-top: 35px;
 `;
 

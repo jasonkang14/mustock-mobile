@@ -34,6 +34,12 @@ export const normal = css`
   line-height: 120%;
 `;
 
+export const medium = css`
+  ${common};
+  font-size: 14px;
+  line-height: 140%;
+`;
+
 export const mid = css`
   ${common};
   font-size: 16px;

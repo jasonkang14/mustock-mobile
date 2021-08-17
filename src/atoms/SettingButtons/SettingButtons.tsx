@@ -4,10 +4,10 @@ import * as mixins from "styles/mixins";
 import * as fonts from "styles/fonts";
 
 export const AssetButton = styled(ButtonStyle)<{ isActive: boolean }>`
-  ${fonts.normal}
-  ${fonts.bold}
   ${mixins.flexCenter}
-  padding: 9px 36px;
+  ${fonts.medium}
+  ${fonts.bold}
+  padding: 7px 11%;
   border-radius: 3px 3px 0px 0px;
   color: var(--color-01);
   ${({ isActive }) =>
@@ -19,17 +19,25 @@ export const AssetButton = styled(ButtonStyle)<{ isActive: boolean }>`
 `;
 
 export const StockButton = styled(AssetButton)<{ isActive: boolean }>`
-  && {
-    padding: 9px 24px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+  ${fonts.normal}
+  ${fonts.bold}
+  padding: 8px 12.7px;
+  box-shadow: 0px 0.2px 0.2px rgba(0, 0, 0, 0.25);
+  ${({ isActive }) =>
+    `
+  background-color: ${isActive ? "var(--color-07)" : "transparent"};
+  color: ${isActive ? "var(--color-01)" : "var(--color-04)"};
+  border-top: none;
+  
+
+  `}
 `;
 
 export const ConfirmButton = styled(ButtonStyle)`
   ${fonts.mid}
   ${fonts.bold}
   ${mixins.flexCenter}
-  height: 50px;
+  height: 40px;
   width: 100%;
   color: var(--color-01);
   background-color: var(--color-07);

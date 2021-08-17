@@ -16,7 +16,7 @@ export default function AlgorithmSubscription() {
     <Widget>
       <SectionTitle>
         <HeaderIcon src="/icons/ic-algorithm.svg" />
-        구독중인 <Mark color="#ea4335">인공지능</Mark> 포트폴리오
+        구독중인 <Emphasis>인공지능</Emphasis> 포트폴리오
       </SectionTitle>
 
       {algorithmArray.map((algorithm, index) => {
@@ -44,6 +44,11 @@ const AlgorithmWrap = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-top: 10px;
+`;
+
+const Emphasis = styled.strong`
+  color: var(--color-09);
+  margin: 0 6px;
 `;
 
 const AlgorithmItem = styled.span`
