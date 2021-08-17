@@ -17,16 +17,6 @@ export const HeaderIcon = styled(Icon)`
   margin-right: 12px;
 `;
 
-export const SectionTab = styled.li<{ isActive?: boolean }>`
-  ${fonts.bold}
-  font-size: 14px;
-  list-style-type: none;
-  height: 14px;
-  cursor: pointer;
-  color: ${({ isActive }) =>
-    isActive ? "var(--color-07)" : "var(--color-04)"};
-`;
-
 export const SupportTab = styled.li<{ isActive?: boolean }>`
   ${fonts.normal}
   ${fonts.bold}

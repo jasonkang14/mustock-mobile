@@ -55,11 +55,10 @@ const Wrapper = styled.ul`
 `;
 
 const Question = styled.li`
+  ${fonts.medium}
   ${mixins.flexRow}
   padding: 0 16px 12px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-  line-height: 160%;
   list-style-type: none;
   border-bottom: 2px solid var(--color-03);
   justify-content: space-between;

@@ -4,7 +4,7 @@ import * as mixins from "styles/mixins";
 import * as fonts from "styles/fonts";
 
 const small = css`
-  width: 100px;
+  width: 84px;
 `;
 
 const mid = css`
@@ -39,8 +39,8 @@ const DropdownStyle = styled.button<PropTypes>`
   align-items: center;
   justify-content: space-between;
   border: 1px solid var(--color-03);
-  padding-left: 30px;
-  padding-right: 13px;
+  padding-left: 20px;
+  padding-right: 9px;
   border-radius: 5px;
   height: 32px;
   cursor: pointer;

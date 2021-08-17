@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <>
           <Header toggleNavBar={toggleNavBar} />
           <MainScreen>
-            {showNav && <NavigationBar />}
+            {showNav && <NavigationBar closeNavBar={toggleNavBar} />}
             <Component {...pageProps} />
           </MainScreen>
         </>
@@ -42,6 +42,7 @@ const Layout = styled.div`
   ${mixins.flexColumn}
   position: relative;
   justify-content: space-between;
+  overflow-x: scroll;
   height: 100vh;
   background-color: var(--color-02);
 `;

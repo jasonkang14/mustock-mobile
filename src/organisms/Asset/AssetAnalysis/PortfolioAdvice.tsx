@@ -39,7 +39,7 @@ const Wrapper = styled.div`
 const CurrentStatus = styled.div`
   ${fonts.normal}
   > mark:last-child {
-    font-size: 14px;
+    ${fonts.medium}
   }
 `;
 

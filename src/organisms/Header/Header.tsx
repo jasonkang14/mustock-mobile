@@ -21,6 +21,7 @@ export default function Header({ toggleNavBar }: HeaderProps) {
 }
 
 const Wrapper = styled.header`
+  ${mixins.sticky}
   ${mixins.flexRow}
   justify-content: space-between;
   align-items: center;
