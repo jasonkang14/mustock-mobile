@@ -6,7 +6,7 @@ import PaymentInfo from "./PaymentInfo";
 import PaymentHistory from "./PaymentHistory";
 import Deactivate from "./Deactivate";
 import PageHeader from "organisms/PageHeader";
-import * as mixins from "styles/mixins";
+
 export type SettingsTab =
   | "PERSONAL_INFO"
   | "CHANGE_PASSWORD"
@@ -35,12 +35,15 @@ export default function SettingsBody() {
   };
   return (
     <>
-      <PageHeader
-        currentTab={tab}
-        handleTabChange={handleTabChange}
-        tabArray={tabArray}
-      />
-
+      <ScrollWrap>
+        <HeaderWrap>
+          <PageHeader
+            currentTab={tab}
+            handleTabChange={handleTabChange}
+            tabArray={tabArray}
+          />
+        </HeaderWrap>
+      </ScrollWrap>
       {tab === "PERSONAL_INFO" && <PersonalInfo />}
       {tab === "CHANGE_PASSWORD" && <ChangePassword />}
       {tab === "PAYMENT_INFO" && <PaymentInfo />}
@@ -49,3 +52,11 @@ export default function SettingsBody() {
     </>
   );
 }
+
+const HeaderWrap = styled.div`
+  width: 130vw;
+`;
+
+const ScrollWrap = styled.div`
+  overflow-x: scroll;
+`;

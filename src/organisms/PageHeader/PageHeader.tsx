@@ -43,7 +43,6 @@ export default function PageHeader({
 }
 
 const Header = styled.ul`
-  ${mixins.sticky}
   ${mixins.flexRow}
   align-items: center;
   background-color: var(--color-01);
@@ -51,10 +50,7 @@ const Header = styled.ul`
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin: 0 0 16px;
-  padding: 14px 20px;
-  height: 46px;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  padding: 16px 0 16px 20px;
 
   > li:not(:first-child) {
     border-left: 2px solid var(--color-04);
@@ -66,7 +62,6 @@ const Header = styled.ul`
 const SectionTab = styled.li<{ isActive?: boolean }>`
   ${fonts.medium}
   ${fonts.bold}
-  overflow-x: scroll;
   list-style-type: none;
   list-style-position: inside;
   cursor: pointer;
