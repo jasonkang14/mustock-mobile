@@ -1,4 +1,8 @@
-## SIDE PROJECT with Friends, trying to build a system which an algorithm trades stocks.
+## MUSTOCK
+
+### SIDE PROJECT with friends, trying to build a system which an algorithm trades stocks.
+### I made every single commit in this repository
+
 Built with Next.js because we are planning on launching this as a business but did not succeed because the algorithm was not so successful in making profits
 
 Therefore not deployed
